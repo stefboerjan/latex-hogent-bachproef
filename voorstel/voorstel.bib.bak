@@ -16,7 +16,7 @@
   urldate = {2022-10-05},
 }
 
-@Online{Andony2022,
+@Online{,
   author = {Brock Andony},
   date   = {2022-02-17},
   title  = {Bluetooth Low Energy (BLE) Construction Uses and Applications},

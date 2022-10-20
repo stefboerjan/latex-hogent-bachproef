@@ -3,37 +3,53 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
 
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+Bluetooth Low Energy (BLE) is een eenvoudige draadloze netwerktechnologie \autocite{Heydon2013}, onafhankelijk van het klassieke Bluetooth. Het is geoptimaliseerd voor ultra laag energieverbruik en een lagere datacapaciteit. BLE wordt standaard ondersteund door zo goed als alle populaire operating systems zoals iOS, Android, macOS en Windows.
 
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+Een technologie zoals dit kan gebruikt worden in diverse sectoren met verschillende toepassingen. Enkele van deze toepassingen bedragen bijvoorbeeld access control, blood monitoring en smart watches, maar in deze scriptie zal er gefocust worden op asset tracking op een bouwwerf. Hierrond kunnen verschillende vraagstellingen geformuleerd worden.
 
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+In dit onderzoek wordt een proof of concept uitgevoerd om de huidige manier van asset tracking op een bouwwerf te optimaliseren aan de hand van BLE beacons, BLE tags, gateways en compatibele smartphones.
 
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+Het doel van dit onderzoek is om een introductie te geven tot de problematiek en waarom dit een verbetering zou kunnen zijn op de huidige manier van asset tracking. Vervolgens volgt er een analyse van wetenschappelijke teksten en artikels, waaruit alle voordelen en nadelen van het gebruik van BLE, in de context van asset tracking, op een bouwwerf voorkomen. Daaropvolgend wordt er op zoek gegaan naar de meest geschikte protocols, compatibiliteit van software en hardware zoals beacons en gateways. Tot slot wordt een app samengesteld waarmee assets gelokaliseerd en gevisualiseerd kunnen worden, waarna advies over de meest optimale oplossing verleend wordt.
+
+%Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+
+%\begin{itemize}
+%  \item kaderen thema
+%  \item de doelgroep
+%  \item de probleemstelling en (centrale) onderzoeksvraag
+%  \item de onderzoeksdoelstelling
+%\end{itemize}
+%
+%Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+%
+%De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+%
+%Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+%
+%Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+Op een bouwwerf worden vandaag de dag heel wat traceertechnologieën gebruikt \autocite{Nasr2013}, aangezien deze hebben aangetoond efficiënt en betaalbaar te zijn. Enkele hiervan zijn Ultra-Wide Bands (UWB), Radio Frequency Identification Cards (RFID) en Global Positioning Systems (GPS). Real-time assets zoals werkmateriaal, machines en werkpersoneel kunnen aan de hand hiervan getraceerd worden. 
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+Een Bluetooth Low Energy  beacon of tag is een simpel toestel dat niet meer hoeft te zijn dan een CPU, radio en batterij. Het is een radio transmitter \autocite{Andony2022} die BLE signalen verstuurt zodat die geïnterpreteerd kunnen worden door compatibele apps of operating systems binnen een bepaalde afstand. Dit signaal is meestal een uniek ID nummer. Door dit signaal kan ook de locatie van de beacon of tag bepaald worden door de ontvanger. BLE tags kunnen bijna op elk voorwerp worden aagebracht, zodat het via Bluetooth kan worden geïdentificeerd en gevolgd. Door het minimale stroomverbruik kunnen deze bovendien langer aanstaan zonder te moeten worden opgeladen. Dit maakt BLE tags ideaal voor het volgen van inventaris of het bewaken van de locatie van waardevolle voorwerpen.
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+Een mogelijke vraag die kan worden gesteld is waarom BLE nog niet gebruikt wordt voor asset tracking op een bouwwerf en dat is wat in deze scriptie onderzocht wordt.
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
-
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+%Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+%
+%Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+%
+%Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+%
+%Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+%
+%Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -42,31 +58,50 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+%Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+Het onderzoek houdt zes fasen in. In deze fasen wordt er een kleine vergelijkende studie uitgevoerd en een Proof of Concept opgesteld.
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+De eerste fase is een introductie over de problematiek. Dit wordt gerealiseerd door een grondige studie van vakliteratuur, zoals wetenschappelijke teksten of blogs. Hieruit volgt een tekst die alle vereisten aanhaalt voor een optimale oplossing. De geschatte duurtijd van deze fase bedraagt twee weken.
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+De tweede fase houdt een analyse in van wetenschappelijke teksten, met als resultaat een uitgebreide tekst over de voordelen van BLE asset tracking, ten opzichte van technologieën die vandaag de dag gebruikt worden. Hiervoor is een week genoeg.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+De derde fase is opnieuw een beschrijving, maar dan over de valkuilen van BLE asset tracking. Deze fase van het onderzoek brengt alle mogelijke tekortkomingen in kaart. Ook voor deze fase is een week voldoende.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+De vierde fase bestaat uit het toelichten van de meest geschikte protocols, compatibiliteit van software en hardware ,zoals beacons en gateways. Hierbij wordt er gezocht naar de meest geschikte hardware waarbij er nauwkeurig afgewogen moet worden tussen kosten en functionaliteit. Vervolgens wordt er een veldonderzoek uitgevoerd om, naargelang de vereisten, de keuze te maken op welke manier de app ontwikkeld zal worden. Tot slot zullen alle beschikbare protocols in kaart gebracht worden. De geschatte duurtijd van deze fase bedraagt drie weken.
 
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+De vijfde fase van dit onderzoek bedraagt het ontwikkelen van een applicatie waarmee assets gelokaliseerd en gevisualiseerd kunnen worden. Deze app wordt verwacht in .NET te worden geschreven voor het Android operating system. De geschatte duurtijd van deze fase bedraagt vier weken.
+
+De zesde en laatste fase bevat een verduidelijking van de bekomen resultaten, met als doel te bewijzen dat het voorgestelde concept, asset tracking a.d.h.v. Bluetooth Low Energy, een optimale manier is. De geschatte duurtijd van deze fase bedraagt een week.
+
+
+%Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+%
+%Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+%
+%Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+%
+%Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+%
+%Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+%
+%Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+Er wordt verwacht dat Bluetooth Low Energy een zeer optimale keuze is voor asset tracking binnen een bouwwerf. Met een lage kostprijs, makkelijke installatie en nauwkeurige tracering, behoort deze technologie aan de top van rendabele en duurzame mogelijkheden.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+Werfleiders kunnen op dezelfde manier hun werkmateriaal, personeel en machines traceren, maar dan veel goedkoper, accurater en mogelijks efficiënter.
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+%Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+%
+%Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+%
+%Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
