@@ -7,9 +7,10 @@
 
 Bluetooth Low Energy (BLE) is een eenvoudige draadloze netwerktechnologie \autocite{Heydon2013}, onafhankelijk van het klassieke Bluetooth. Het is geoptimaliseerd voor ultra laag energieverbruik en een lagere datacapaciteit. BLE wordt standaard ondersteund door zo goed als alle populaire operating systems zoals iOS, Android, macOS en Windows.
 
-Een technologie zoals dit kan gebruikt worden in diverse sectoren met verschillende toepassingen. Enkele van deze toepassingen bedragen bijvoorbeeld access control, blood monitoring en smart watches, maar in deze scriptie zal er gefocust worden op asset tracking op een bouwwerf. Hierrond kunnen verschillende vraagstellingen geformuleerd worden.
+Een technologie zoals deze kan gebruikt worden in diverse sectoren met verschillende toepassingen. Enkele van deze toepassingen zijn bijvoorbeeld access control, blood monitoring en smart watches, maar in deze scriptie zal er gefocust worden op asset tracking op een bouwwerf. Hierrond kunnen verschillende vraagstellingen geformuleerd worden.
 
 In dit onderzoek wordt een proof of concept uitgevoerd om de huidige manier van asset tracking op een bouwwerf te optimaliseren aan de hand van BLE beacons, BLE tags, gateways en compatibele smartphones.
+Er zal ook een algemene analyse gebeuren van de beveiliging van BLE. Hoewel de beveiligingsfuncties in de loop der jaren opmerkelijk zijn verbeterd, is de BLE-technologie nog steeds vatbaar voor ernstige bedreigingen \autocite{Lacava_2022}, waardoor een kloof ontstaat tussen het theoretische standaardontwerp en de uitvoering ervan.
 
 Het doel van dit onderzoek is om een introductie te geven tot de problematiek en waarom dit een verbetering zou kunnen zijn op de huidige manier van asset tracking. Vervolgens volgt er een analyse van wetenschappelijke teksten en artikels, waaruit alle voordelen en nadelen van het gebruik van BLE, in de context van asset tracking, op een bouwwerf voorkomen. Daaropvolgend wordt er op zoek gegaan naar de meest geschikte protocols, compatibiliteit van software en hardware zoals beacons en gateways. Tot slot wordt een app samengesteld waarmee assets gelokaliseerd en gevisualiseerd kunnen worden, waarna advies over de meest optimale oplossing verleend wordt.
 
@@ -37,7 +38,7 @@ Het doel van dit onderzoek is om een introductie te geven tot de problematiek en
 
 Op een bouwwerf worden vandaag de dag heel wat traceertechnologieën gebruikt \autocite{Nasr2013}, aangezien deze hebben aangetoond efficiënt en betaalbaar te zijn. Enkele hiervan zijn Ultra-Wide Bands (UWB), Radio Frequency Identification Cards (RFID) en Global Positioning Systems (GPS). Real-time assets zoals werkmateriaal, machines en werkpersoneel kunnen aan de hand hiervan getraceerd worden. 
 
-Een Bluetooth Low Energy  beacon of tag is een simpel toestel dat niet meer hoeft te zijn dan een CPU, radio en batterij. Het is een radio transmitter \autocite{Andony2022} die BLE signalen verstuurt zodat die geïnterpreteerd kunnen worden door compatibele apps of operating systems binnen een bepaalde afstand. Dit signaal is meestal een uniek ID nummer. Door dit signaal kan ook de locatie van de beacon of tag bepaald worden door de ontvanger. BLE tags kunnen bijna op elk voorwerp worden aagebracht, zodat het via Bluetooth kan worden geïdentificeerd en gevolgd. Door het minimale stroomverbruik kunnen deze bovendien langer aanstaan zonder te moeten worden opgeladen. Dit maakt BLE tags ideaal voor het volgen van inventaris of het bewaken van de locatie van waardevolle voorwerpen.
+Een Bluetooth Low Energy  beacon of tag is een simpel toestel dat niet meer hoeft te zijn dan een CPU, radio en batterij. Het is een radio transmitter \autocite{Andony2022} die BLE signalen verstuurt zodat die geïnterpreteerd kunnen worden door compatibele apps of operating systems binnen een bepaalde afstand. Dit signaal is meestal een uniek ID nummer. Door dit signaal kan ook de locatie van de beacon of tag bepaald worden door de ontvanger. Hier speelt RSSI \autocite{Subhan_2019} een belangrijke rol. Als gevolg van ruis treden er fluctuaties op in de RSSI, wat leidt tot een fout in de afstandsbepaling, die uiteindelijk invloed nauwkeurigheid van de positiebepaling beïnvloed. BLE tags kunnen bijna op elk voorwerp worden aangebracht, zodat het via Bluetooth kan worden geïdentificeerd en gevolgd. Door het minimale stroomverbruik kunnen deze bovendien langer aanstaan zonder te moeten worden opgeladen. Dit maakt BLE tags ideaal voor het volgen van inventaris of het bewaken van de locatie van waardevolle voorwerpen.
 
 Een mogelijke vraag die kan worden gesteld is waarom BLE nog niet gebruikt wordt voor asset tracking op een bouwwerf en dat is wat in deze scriptie onderzocht wordt.
 
@@ -97,7 +98,7 @@ De zesde en laatste fase bevat een verduidelijking van de bekomen resultaten, me
 
 Er wordt verwacht dat Bluetooth Low Energy een zeer optimale keuze is voor asset tracking binnen een bouwwerf. Met een lage kostprijs, makkelijke installatie en nauwkeurige tracering, behoort deze technologie aan de top van rendabele en duurzame mogelijkheden.
 
-Werfleiders kunnen op dezelfde manier hun werkmateriaal, personeel en machines traceren, maar dan veel goedkoper, accurater en mogelijks efficiënter.
+De doelgroep van dit onderzoek, namelijk werfleiders of andere leidinggevende functies kunnen op dezelfde manier hun werkmateriaal, personeel en machines traceren, maar dan veel goedkoper, accurater en mogelijks efficiënter.
 
 %Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
 %

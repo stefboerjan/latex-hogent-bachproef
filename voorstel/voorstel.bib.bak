@@ -16,11 +16,22 @@
   urldate = {2022-10-05},
 }
 
-@Online{,
+@Online{Andony2022,
   author = {Brock Andony},
   date   = {2022-02-17},
   title  = {Bluetooth Low Energy (BLE) Construction Uses and Applications},
   url    = {https://mycomply.net/info/blog/bluetooth-low-energy-ble/},
+}
+
+@Article{Lacava_2022,
+  author       = {Andrea Lacava and Valerio Zottola and Alessio Bonaldo and Francesca Cuomo and Stefano Basagni},
+  date         = {2022-07},
+  journaltitle = {Computer Networks},
+  title        = {Securing Bluetooth Low Energy networking: An overview of security procedures and threats},
+  doi          = {10.1016/j.comnet.2022.108953},
+  pages        = {108953},
+  volume       = {211},
+  publisher    = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
