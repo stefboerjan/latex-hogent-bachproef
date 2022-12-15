@@ -67,4 +67,15 @@
   publisher    = {Elsevier {BV}},
 }
 
+@Article{Mezzanotte2021,
+  author       = {Mezzanotte, Paolo and Palazzi, Valentina and Alimenti, Federico and Roselli, Luca},
+  date         = {2021},
+  journaltitle = {IEEE Journal of Microwaves},
+  title        = {Innovative RFID Sensors for Internet of Things Applications},
+  doi          = {10.1109/JMW.2020.3035020},
+  number       = {1},
+  pages        = {55-65},
+  volume       = {1},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
