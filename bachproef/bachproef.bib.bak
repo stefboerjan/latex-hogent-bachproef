@@ -1,4 +1,4 @@
-@Article{Kumbhar_2017,
+@Article{Kumbhar2017,
   author       = {Abhaykumar Kumbhar},
   date         = {2017-07},
   journaltitle = {Wireless Personal Communications},
@@ -76,6 +76,123 @@
   number       = {1},
   pages        = {55-65},
   volume       = {1},
+}
+
+@Article{Roberts2006,
+  author       = {C. M. Roberts},
+  date         = {2006-02},
+  journaltitle = {Computers {\&}amp$\mathsemicolon$ Security},
+  title        = {Radio frequency identification ({RFID})},
+  doi          = {10.1016/j.cose.2005.12.003},
+  number       = {1},
+  pages        = {18--26},
+  volume       = {25},
+  publisher    = {Elsevier {BV}},
+}
+
+@InProceedings{Jais2015,
+  author    = {Jais M.I. and Ehkan P. and Ahmad R.B. and Ismail I. and Sabapathy T. and Jusoh M.},
+  booktitle = {2015 International Conference on Computer, Communications, and Control Technology (I4CT)},
+  date      = {2015},
+  title     = {Review of angle of arrival (AOA) estimations through received signal strength indication (RSSI) for wireless sensors network (WSN)},
+  doi       = {10.1109/I4CT.2015.7219597},
+  pages     = {354-359},
+}
+
+@InProceedings{Rahayu2008,
+  author    = {Yusnita Rahayu and Tharek Abd. Rahman and Razali Ngah and P. S. Hall},
+  booktitle = {2008 5th {IFIP} International Conference on Wireless and Optical Communications Networks ({WOCN} {\textquotesingle}08)},
+  date      = {2008-05},
+  title     = {Ultra wideband technology and its applications},
+  doi       = {10.1109/wocn.2008.4542537},
+  publisher = {{IEEE}},
+}
+
+@Online{Griffith2021,
+  author = {Eric Griffith},
+  date   = {2021-04-29},
+  title  = {How Do Apple AirTags Work? Ultra-Wideband Explained},
+  url    = {https://www.pcmag.com/how-to/what-is-ultra-wideband-uwb},
+}
+
+@Article{Siddiqui2019,
+  author  = {Siddiqui, Hassaan and Vahdatikhaki, Faridaddin and Hammad, Amin},
+  title   = {Case study on application of wireless ultra-wideband technology for tracking equipment on a congested site.},
+  pages   = {167--187},
+  url     = {https://ris.utwente.nl/ws/files/166448084/2019_10_ITcon_Siddiqui.pdf},
+  volume  = {24},
+  journal = {J. Inf. Technol. Constr.},
+  year    = {2019},
+}
+
+@Online{Rankin2020,
+  author = {Sebastien Rankin},
+  date   = {2020-01-27},
+  title  = {How do Barcodes Work? Your Questions, Answered},
+  url    = {https://www.lightspeedhq.com/blog/how-do-barcodes-work/},
+}
+
+@Online{Penny2022,
+  author = {Sarah Penny},
+  date   = {2022-07-11},
+  title  = {7 Asset Tracking Technologies},
+  url    = {https://www.smatstraffic.com/2022/07/11/7-asset-tracking-technologies/},
+}
+
+@InProceedings{Sevier2019,
+  author       = {Sevier, Seth and Tekeoglu, Ali},
+  booktitle    = {2019 International Conference on Electronics, Information, and Communication (ICEIC)},
+  title        = {Analyzing the security of Bluetooth low energy},
+  organization = {IEEE},
+  pages        = {1--5},
+  url          = {https://www.researchgate.net/profile/Ali-Tekeoglu/publication/333228988_Analyzing_the_Security_of_Bluetooth_Low_Energy/links/5de01b6a4585159aa4518887/Analyzing-the-Security-of-Bluetooth-Low-Energy.pdf},
+  year         = {2019},
+}
+
+@Article{Juels2006,
+  author       = {Juels, Ari},
+  date         = {2005-09-28},
+  journaltitle = {IEEE journal on selected areas in communications},
+  title        = {RFID security and privacy: A research survey},
+  number       = {2},
+  pages        = {381--394},
+  url          = {http://www.mscs.mu.edu/~iq/papers/rfid/RFID Security and Privacy A research survey.pdf},
+  volume       = {24},
+  journal      = {IEEE journal on selected areas in communications},
+  publisher    = {IEEE},
+  year         = {2006},
+}
+
+@Article{Devlin2009,
+  author       = {Devlin, Ger and McDonnell, Kevin},
+  date         = {2009},
+  journaltitle = {The Open Transportation Journal},
+  title        = {Assessing real time GPS asset tracking for timber haulage},
+  number       = {2009},
+  pages        = {78--86},
+  url          = {https://researchrepository.ucd.ie/bitstream/10197/6101/1/Devlin_TOTJ.pdf},
+  volume       = {3},
+  journal      = {The Open Transportation Journal},
+  publisher    = {Bentham Open},
+  year         = {2009},
+}
+
+@Online{Rodrigue2022,
+  author = {Erin Rodrigue},
+  date   = {2022-09-21},
+  title  = {What is a QR Code + How Does It Work? Everything Marketers Should Know},
+  url    = {https://blog.hubspot.com/blog/tabid/6307/bid/16088/everything-a-marketer-should-know-about-qr-codes.aspx},
+}
+
+@Article{Ahmed2020,
+  author       = {Fahim Ahmed and Mark Phillips and Stephen Phillips and Kyoung-Yun Kim},
+  date         = {2020},
+  journaltitle = {Procedia Manufacturing},
+  title        = {Comparative Study of Seamless Asset Location and Tracking Technologies},
+  doi          = {10.1016/j.promfg.2020.10.160},
+  pages        = {1138--1145},
+  volume       = {51},
+  publisher    = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
