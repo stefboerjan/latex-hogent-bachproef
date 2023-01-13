@@ -195,4 +195,35 @@
   publisher    = {Elsevier {BV}},
 }
 
+@Article{Tosi2017,
+  author       = {Jacopo Tosi and Fabrizio Taffoni and Marco Santacatterina and Roberto Sannino and Domenico Formica},
+  date         = {2017-12},
+  journaltitle = {Sensors},
+  title        = {Performance Evaluation of Bluetooth Low Energy: A Systematic Review},
+  doi          = {10.3390/s17122898},
+  number       = {12},
+  pages        = {2898},
+  url          = {https://www.mdpi.com/1424-8220/17/12/2898/htm},
+  volume       = {17},
+  publisher    = {{MDPI} {AG}},
+}
+
+@Article{Caesar2022,
+  author       = {Matthias Cäsar and Tobias Pawelke and Jan Steffan and Gabriel Terhorst},
+  date         = {2022-03},
+  journaltitle = {Computer Networks},
+  title        = {A survey on Bluetooth Low Energy security and privacy},
+  doi          = {10.1016/j.comnet.2021.108712},
+  pages        = {108712},
+  volume       = {205},
+  publisher    = {Elsevier {BV}},
+}
+
+@Online{GadgetFaculty2022,
+  author = {GadgetFaculty},
+  date   = {2022-07-18},
+  title  = {Can You Use Your Smartphone As An RFID Reader And An RFID Tag?},
+  url    = {https://gadgetfaculty.com/smartphone-rfid-reader-rfid-tag/},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

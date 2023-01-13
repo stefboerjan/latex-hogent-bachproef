@@ -24,14 +24,13 @@ De technologieën die het meest gebruikt worden voor asset tracking in de bouwin
 
 \subsubsection{Global Positioning System}
 
-Het Global Positioning System (GPS) is een positionering en navigatie systeem ontwikkeld door het Amerikaans ministerie van defensie \autocite{McNeff} in de jaren zestig. Het bestaat ondertussen uit meer dan dertig satellieten die rond onze aarde cirkelen. Deze kunnen met behulp van de atomische klok, die elke satelliet aan boord heeft, en hun gekende precieze locatie continu uitzenden door middle van signalen die gebruikers op aarde kunnen ontvangen. Hiermee is het mogelijk de tijd en locatie van de gebruiker te bepalen met respectievelijk een paar nanoseconden en meter speling. Elke GPS-satelliet kent zijn eigen baanlocatie en systeemtijd. Om de positie van een ontvanger nauwkeurig te kunnen bepalen, moeten er ten allen tijde minstens vier satellieten zichtbaar zijn die voldoende van elkaar gescheiden zijn. Met behulp van trilateratie, wat de basis is van de gebruikte technieken waarbij de afstandsmetingen van \(n + 1\) satellieten worden gebruikt voor een n-dimensionale positiebepaling \autocite{Rahman2012}, is het mogelijk de positie te bepalen van een gebruiker op aarde. Hier zal niet verder op uitgebreid worden, aangezien dit niet aansluit bij het doel van deze scriptie.\\
+Het Global Positioning System (GPS) is een positionering en navigatie systeem ontwikkeld door het Amerikaans ministerie van defensie \autocite{McNeff} in de jaren zestig. Het bestaat ondertussen uit meer dan dertig satellieten die rond onze aarde cirkelen. Deze kunnen met behulp van de atomische klok, die elke satelliet aan boord heeft, en hun gekende precieze locatie continu uitzenden door middel van signalen die gebruikers op aarde kunnen ontvangen. Hiermee is het mogelijk de tijd en locatie van de gebruiker te bepalen met respectievelijk een paar nanoseconden en meter speling. Elke GPS-satelliet kent zijn eigen baanlocatie en systeemtijd. Om de positie van een ontvanger nauwkeurig te kunnen bepalen, moeten er ten allen tijde minstens vier satellieten zichtbaar zijn die voldoende van elkaar gescheiden zijn. Met behulp van trilateratie, wat de basis is van de gebruikte technieken waarbij de afstandsmetingen van \(n + 1\) satellieten worden gebruikt voor een n-dimensionale positiebepaling \autocite{Rahman2012}, is het mogelijk de positie te bepalen van een gebruiker op aarde. Hier zal niet verder op uitgebreid worden, aangezien dit niet aansluit bij het doel van deze scriptie.\\
 
-%TODO: Praten over hoe dit in de bouwindustrie werkt + FIGUURTJES
 Vandaag de dag is GPS de meest gebruikte technologie voor het traceren van activa \autocite{Nasr2013}. In de bouwindustrie is GPS zeer handig door zijn groot werkbereik. Hierdoor kunnen bedrijven hun activa volgen over de hele wereld. Dit wordt gerealiseerd aan de hand van trackers die geïnstalleerd worden op het dashboard van voertuigen en machines of op een andere veilige plek waar de tracker niet makkelijk beschadigd kan worden. Deze trackers zijn aangekocht bij een bepaald bedrijf die meestal een bijhorende website of software voorziet waar de klant kan inloggen om de locatie van al zijn activa te raadplegen. Soms voorzien deze GPS trackers extra functionaliteiten zoals diagnostische informatie over de motor \autocite{Devlin2009}, wat zaken inhoudt als stationair draaien, hard remmen, kilometers per liter, etc.
 
 \subsubsection{Radio Frequenty Identifier}
 
-Radio Frequenty Identifier (RFID) is een draadloze communicatietechnologie die in zijn simpelste vorm objecten kan detecteren, opsporen, identificeren, volgen en controleren \autocite{Tan2022}. Het bestaat voornamelijk uit drie elementen: readers (figuur \ref{fig:rfidhandheld}), antennes en tags (figuur \ref{fig:rfidtag}). De reader, soms ook transeiver genaamd, heeft de mogelijkheid radio frequentie (RF) elektrische golven te sturen naar een of meerdere RFID tags. De tags hoeven dus niet in het gezichtsveld van de reader te zitten. Deze tags, actief of passief, ontvangen de elektrische golf met hun antenne en zetten deze met behulp van een spoel om naar elektrische stroom. Vervolgens wordt deze stroom door de tag, die bevestigd is aan een fysiek object, gebruikt om terug via een RF elektrische golf een antwoord te sturen naar de reader.\\
+Radio Frequenty Identifier (RFID) is een draadloze communicatietechnologie die in zijn simpelste vorm objecten kan detecteren, opsporen, identificeren, volgen en controleren \autocite{Tan2022}. Het bestaat voornamelijk uit drie elementen: readers (figuur \ref{fig:rfidhandheld}), antennes en tags (figuur \ref{fig:rfidtag}). De reader, soms ook transceiver genaamd, heeft de mogelijkheid radio frequentie (RF) elektrische golven te sturen naar een of meerdere RFID tags. De tags hoeven dus niet in het gezichtsveld van de reader te zitten. Deze tags, actief of passief, ontvangen de elektrische golf met hun antenne en zetten deze met behulp van een spoel om naar elektrische stroom. Vervolgens wordt deze stroom door de tag, die bevestigd is aan een fysiek object, gebruikt om terug via een RF elektrische golf een antwoord te sturen naar de reader.\\
 
 RFID tags kunnen opgedeeld worden in drie soorten. Actieve, semi-passief en passieve tags \autocite{Mezzanotte2021}.  Actieve tags bezitten een batterij die heel het systeem van stroom voorziet. Zo een systeem (van een actieve tag) bestaat uit een ontvanger, een zender en omgevingssensoren. Het principe van een passieve tag is vrij verschillend, want deze tags zullen de stroom, die toekomt als RF elektrische golf omgezet wordt door de ingebouwde spoel, gebruiken om een antwoord te verzenden. Passieve tags hebben geen batterij en transmitter. Semi-passieve tags zijn een mix van actief en passief, in de zin dat ze dezelfde functioneringsprincipe gebruiken, maar ze hebben wel een batterij om de microchip of sensoren van stroom te voorzien.\\
 
@@ -47,13 +46,9 @@ RFID tags kunnen opgedeeld worden in drie soorten. Actieve, semi-passief en pass
     \label{fig:rfidhandheld}
 \end{figure}
 
-%TODO: \autocite{Roberts2006} <-- NOG GEBRUIKEN ERGENS EN VOOR FIGUURTJES\\
-
 RFID wordt vaak gebruikt in sectoren waar er bijvoorbeeld producten worden gestockeerd in een magazijn. Indien er door een reader een vraagimpuls wordt verzonden, kunnen de tags antwoorden met een digitaal gegeven. Dit is vaak hun identificatienummer. Op deze manier kan een ID worden toegewezen aan ieder product bij het printen van de tag en kan een magazijnmedewerker met behulp van een reader op deze manier het juiste product vinden in een magazijn.\\
 
 In de bouwindustrie wordt dit op een gelijkaardige manier gebruikt om assets te traceren en lokaliseren.\\
-
-%TODO: Verder uitwerken
 
 \subsubsection{Ultra-wideband}
 
@@ -83,16 +78,16 @@ Er zijn twee soorten barcodes namelijk twee dimensionale, ook wel QR Codes genoe
 \subsubsection{Quick Response codes}
 QR codes of zoals eerder vermeld ook bekend als tweedimensionale barcodes zijn ook een soort barcode, zoals de naam al aangeeft, maar meer complex. Ze zijn uitgevonden in 1993 door een Japans automobielbedrijf. Tweedimensionale barcodes kunnen buiten gewoon tekst ook bijvoorbeeld de prijs, voorraadniveaus en zelfs productafbeeldingen opslaan en die informatie dan vrijgeven indien iemand met een compatibel toestel zoals een smartphone de code scant.\\
 
-QR is een afkorting voor quick response. Dit soort code wordt gewoonlijk gebruikt voor marketing doeleinden \autocite{Rodrigue2022} waar ze worden vaak gebruikt om gebruikers om te leiden naar landingspagina's, websites, sociale-mediaprofielen of winkelcoupons. Ze worden de laatste tijd ook vaak gebruikt in hippe restaurants als vervanger van de papieren menukaart. Het ontwerp, de functionaliteit en doeleinden van de QR codes kunnen considerabel verschillen maar deze QR codes vallen meestal in een van de volgende twee categorieën, namelijk statische of dynamische QR codes. \\
+QR is een afkorting voor quick response. Dit soort code wordt gewoonlijk gebruikt voor marketing doeleinden \autocite{Rodrigue2022} waar ze worden vaak gebruikt om gebruikers om te leiden naar landingspagina's, websites, sociale-mediaprofielen of winkelcoupons. Ze worden de laatste tijd ook vaak gebruikt in hippe restaurants als vervanger van de papieren menukaart. Het ontwerp, de functionaliteit en doeleinden van de QR codes kunnen aanzienlijk verschillen maar deze QR codes vallen meestal in een van de volgende twee categorieën, namelijk statische of dynamische QR codes. \\
 
 Statische QR codes zijn uitstekend voor het opslaan van vaste of gevoelige informatie, zoals identificatienummers van bepaalde zaken of toegangscodes. Dit zou dus ideaal zijn voor bijvoorbeeld identificatienummers van activa die traceerbaar moeten zijn aangezien deze informatie niet regelmatig moet bijgewerkt worden. \\
 
-Dynamische QR codes daarentegen laten toe de scanbare informatie zonder limiet bij te werken. Dit is mogelijk aangezien de informatie niet in de code ingebakken zit, in plaats daarvan leidt de code de persoon die de code scant om naar een specifieke URL die altijd aangepast kan worden. Een mooie toepassing hiervan is de eerder besproken restaurantmenu. \\
+Dynamische QR codes daarentegen laten toe de scanbare informatie zonder limiet bij te werken. Dit is mogelijk aangezien de informatie niet in de code ingebakken zit, in plaats daarvan leidt de code de persoon die de code scant om naar een specifieke URL die altijd aangepast kan worden. Een mooie toepassing hiervan is de eerder besproken restaurantmenu. Dit is zeer handig indien men de scanbare data, meestal een URL, achter een QR code wil veranderen zonder een nieuwe te hoeven printen. \\
 
 De werking van dit soort barcode is net zoals de mogelijke functionaliteiten iets complexer maar nog steeds hetzelfde principe als dat van een normale barcode. Een QR code bestaat uit drie grotere vierkanten en een patroon van zwarte en witte blokjes. Dit patroon is uniek per code en bevat de informatie die door te scannen, wat maar enkele seconden duurt, met een compatibel toestel leesbaar wordt. Zo goed als alle smartphones kunnen QR codes standaard scannen met behulp van de camera app en indien dit niet het geval is zijn er meer dan genoeg apps die dit mogelijk maken. De drie grotere blokjes hebben als functie de oriëntatie van de code weer te geven. Hierdoor kunnen scanners op de correcte manier de code scannen.
 
 \subsection{Bluetooth Low Energy}
-Bluetooth Low Energy, ook wel Bluetooth Smart genoemd, is een wireless personal area network (PAN) dat deel uitmaakt van de Bluetooth 4.0 standaard, ontworpen en ontwikkeld door de Bluetooth Special Interest Group (SIG). Dit is het non-profit normalisatie-instituut dat toezicht houdt op de ontwikkeling van Bluetooth standaarden en het beheer van licenties van de Bluetooth-technologieën en -handelsmerken aan fabrikanten. \\
+Bluetooth Low Energy, ook wel Bluetooth Smart genoemd, is een wireless personal area network (PAN) dat deel uitmaakt van de Bluetooth 4.0 standaard \autocite{Bluetooth2022}, ontworpen en ontwikkeld door de Bluetooth Special Interest Group (SIG). Dit is het non-profit normalisatie-instituut dat toezicht houdt op de ontwikkeling van Bluetooth standaarden en het beheer van licenties van de Bluetooth-technologieën en -handelsmerken aan fabrikanten. \\
 
 BLE zendt gegevens uit via 40 kanalen in de 2.4GHz ISM-frequentieband \autocite{Kumbhar2017}. Dit is een gedeelte van het radiospectrum, gereserveerd voor industriële (Industrial), wetenschappelijke (Scientific) en medische (Medical) doeleinden zoals microgolven, medische apparatuur, procesverwarming en soorten elektrolampen. De laatste jaren zijn er ook draadloze communicatie toestellen geproduceerd die ook deze banden kunnen gebruiken zonder storing te veroorzaken voor bestaande apparaten die gebruik maken van de ISM-banden, zoals BLE.\\
 
@@ -112,30 +107,35 @@ Het fundamentele idee van Angle of Depature is hetzelfde als deze van Angle of A
 
 \begin{figure}
     \includegraphics[width=\linewidth]{angle_of_departure_graphic.png}
-    \caption{Angle of Departure}
+    \caption[AoA]{Angle of Departure \autocite{Bluetooth2022}.}
     \label{fig:aop}
 \end{figure}
 
 \begin{figure}
     \includegraphics[width=\linewidth]{angle_of_arrival_graphic.png}
-    \caption{Angle of Arrival}
+    \caption[AoD]{Angle of Arrival \autocite{Bluetooth2022}.}
     \label{fig:aoa}
 \end{figure}
 
 Hier kunnen veel combinaties in gemaakt worden en met behulp van de Received Signal Strength Indicator (RSSI) zijn er nog eens extra mogelijkheden.
 
-
-%TODO: Verder uitwerken
 \subsubsection{Received Signal Strength Indicator}
 
-De Received Signal Strength Indicator (RSSI) geeft het signaalvermogen aan de ontvangende kant weer \autocite{Jais2015} . Dit kan gebruikt worden om de afstand tussen bijvoorbeeld twee apparaten te bepalen.
+De Received Signal Strength Indicator (RSSI) geeft het signaalvermogen aan de ontvangende kant weer \autocite{Jais2015} . Dit kan gebruikt worden om de afstand tussen bijvoorbeeld twee apparaten te bepalen aan de hand van volgende vergelijking.
 
-%sequentie uitgelegd, in wat wordt dit uitgedrukt? toa en andere mss ook uitleggen?
+\begin{equation}
+    \label{rssi}
+    RSSI=−10×N×log(d)+a
+\end{equation}\\
+
+Hierin is $N$ een constante die als één wordt aangenomen, $d$ de afstand in meters tussen de twee apparaten en $a$ het vermogen van de zender op één meter afstand.\\
+
+RSSI wordt uitgedrukt in dBm (decibel-milliwatts). Hoe groter het RSSI getal, hoe dichter de zender is van de ontvanger en hoe sterker het signaal van de zender ontvangen wordt. Wanneer een RSSI-waarde dus in negatieve vorm wordt weergegeven (bijvoorbeeld -100), is het ontvangen signaal sterker naarmate de waarde dichter bij 0 ligt.
 
 \subsubsection{Security}
 Een zeer belangrijke eigenschap van een technologie die waardevolle activa moet kunnen traceren is beveiliging. Hoe veilig is het gebruik van Bluetooth Low Energy voor asset tracking doeleinden nu eigenlijk? Op een bouwwerf staat veel materiaal met enorme waarde zoals machines, voertuigen en ander kostbaar werkmateriaal. Het zou niet interessant zijn als onbevoegden zomaar waardevol materiaal zou kunnen opsporen.\\
 
-Bluetooth Low Energy tags en beacons hebben maar een beperkte functionaliteit. Het enigste verschil tussen de twee is dat tags verplaatsbaar zijn en beacons meestal stationair zijn, maar ze hebben dezelfde functionaliteit namelijk zijn uniek identificatienummer met een vast interval uitzenden via radiofrequentie. Afhankelijk van dit interval kan die tag of beacon dit meerdere jaren doen zonder het vervangen van de batterij. Aangezien dit gebeurd door middel van de reeds eerder besproken broadcast modus \autocite{Sevier2019} kan ieder apparaat die luistert naar Bluetooth Low Energy signalen, door bijvoorbeeld gebruikt te maken van een simpele BLE scanner app van de App of Play Store, dit oppikken. \\
+Bluetooth Low Energy tags en beacons hebben maar een beperkte functionaliteit. Het enigste verschil tussen de twee is dat tags verplaatsbaar zijn en beacons meestal stationair zijn, maar ze hebben dezelfde functionaliteit namelijk zijn uniek identificatienummer met een vast interval uitzenden via radiofrequentie. Afhankelijk van dit interval kan die tag of beacon dit meerdere jaren doen zonder het vervangen van de batterij. Aangezien dit gebeurt door middel van de reeds eerder besproken broadcast modus \autocite{Sevier2019} kan ieder apparaat dat luistert naar Bluetooth Low Energy signalen, door bijvoorbeeld gebruikt te maken van een simpele BLE scanner app van de App of Play Store, dit oppikken. \\
 
 Dit is een nadelige situatie maar onvermijdelijk in het geval van Bluetooth Low Energy aangezien dit nu eenmaal de manier is waarop de Bluetooth protocol opzettelijk ontwerpen is. Indien we kijken naar andere technologieën zoals GPS of RFID zien we wel een verschil.\\
 
@@ -143,32 +143,37 @@ In het geval van RFID kunnen we een gelijkaardige conclusie maken. RFID tags zij
 
 GPS heeft dit probleem niet. Een GPS tracker die gemonteerd zit in een voertuig, op een machine of een ander voorwerp heeft een simkaart. Met behulp van deze kaart kan de GPS tracker zijn locatie en andere data rechtstreeks via het mobiel internet naar de servers sturen van het bedrijf waarvan de trackers aangekocht geweest zijn. Die servers zorgen dan dat de correcte data bij de juiste klanten terechtkomt indien zij inloggen in hun accounts. \\
 
-Barcode en QR code hoeven vermeld te worden op vlak van security aangezien je die eerst manueel moet zoeken voor de code gescand kan worden.
+Barcode en QR code hoeven niet vermeld te worden op vlak van security aangezien je die eerst manueel moet zoeken voor de code gescand kan worden. \\
 
-%TODO: encription ble signals
+Langs de andere kant, indien er nog eens gefocust wordt op Bluetooth Low Energy, is cyber security vanaf het begin van de Bluetooth-specificatie in aanmerking gekomen en verbeterd bij iedere release \autocite{Caesar2022}. Dit deel is meer gefocust op applicaties die via BLE met elkaar connecteren en data uitwisselen zoals smart watches. Iets wat niet echt gedaan wordt in een asset tracking applicatie waar simpelweg het ID gelezen moet worden. De algemene architectuur van Bluetooth kan beschouwd worden aan de hand van de Bluetooth-stack dat getoond word in figuur \ref{fig:stack}. Hier zijn er duidelijk twee lagen te zien, namelijk de controller en host laag met de Host Controller Interface (HCI) die verantwoordelijk is voor de communicatie tussen die twee lagen. De Security Manager is verantwoordelijk voor alles in verband met beveiliging. Deze kan onderverdeeld worden in een cryptografische toolbox en methoden voor pairing en key uitwisseling. Omdat BLE een draadloze technologie is, is deze bijzonder kwetsbaar voor potentiële aanvallen. De Bluetooth-specificatie biedt maatregelingen voor de meeste aanvallen door gebruik te maken van meerdere device pairing schemes, optionele encryptie en authenticatie van connecties of adres randomisatie.
+
+\begin{figure}
+    \includegraphics[width=\linewidth]{blestack.jpg}
+    \caption[Bluetooth Stack]{Bluetooth stack \autocite{Caesar2022}.}
+    \label{fig:stack}
+\end{figure}
 
 \subsection{Smartphones}
-Vandaag de dag zijn zo goed als alle smartphones BLE-compatibel. Dit wil zeggen dat deze probleemloos kunnen communiceren met zaken als smartwatches, headphones, fitness trackers en vooral in het geval van dit onderzoek belangrijk, beacons. Bluetooth Low Energy wordt heel vaak gebruikt voor advertenties te lanceren op smartphones indien een persoon dicht bij een voorwerp loopt. Bijvoorbeeld iemand wandelt voorbij een laptop die net uitgekomen is met de app van die bepaalde winkel geïnstalleerd op zijn smartphone. In dit geval kan een BLE beacon geplaatst zijn in de buurt die continu signalen uitzend over die bepaalde laptop zodat mensen met de app daar reclame over kunnen ontvangen.\\
+Vandaag de dag zijn zo goed als alle smartphones BLE-compatibel. Dit wil zeggen dat deze probleemloos kunnen communiceren met zaken als smartwatches, headphones, fitness trackers en vooral in het geval van dit onderzoek belangrijk, beacons. Bluetooth Low Energy wordt heel vaak gebruikt voor advertenties te lanceren op smartphones indien een persoon dicht bij een voorwerp loopt. Bijvoorbeeld iemand wandelt voorbij een laptop die net uitgekomen is met de app van die bepaalde winkel geïnstalleerd op zijn smartphone. In dit geval kan een BLE beacon geplaatst zijn in de buurt die continu signalen uitzendt over die bepaalde laptop zodat mensen met de app daar reclame over kunnen ontvangen.\\
 
 Bluetooth Low Energy wordt door zeer veel apparaten standaard ondersteund zoals beschreven staat in tabel \ref{tab:os}. In deze tabel wordt weergegeven vanaf wanneer Bluetooth Low Energy ondersteund werd per besturingssysteem.\\
 
 \begin{table}
     \begin{tabular}{l | c | r}
         \hline
-        Device & First supported version & Current version when writing\\
+        Besturingssysteem & Eerste ondersteunende versie & Huidige versie\\
         \hline
         iOS & iOS 5 en later & 16.1 \\
         Android & Android 4.3 en later & 13 \\
-        Windows Phone & Windows Phone 8.1 and later & 8.1\\
-        Windows & Windows 8 and later & 11\\
-        macOS & 10.10 and later & 13 \\
-        Linux & Linux 3.4 and later & 6.1.1 \\
+        Windows Phone & Windows Phone 8.1 en later & 8.1\\
+        Windows & Windows 8 en later & 11\\
+        macOS & 10.10 en later & 13 \\
+        Linux & Linux 3.4 en later & 6.1.1 \\
     \end{tabular}
     \caption{Een overzicht van de populairste besturingssystemen en vanaf wanneer BLE ondersteunt werd}
     \label{tab:os}
 \end{table}
 
-Zoals de tabel weergeeft wordt Bluetooth Low Energy reeds een lange tijd ondersteund. De laatste versie van iOS, Android, Windows Phone, Windows, macOS en Linux is op het moment van schrijven (december 2022) respectivelijk 16.1, 13, 8.1, 11, 13 en 6.1.1. Bijvoorbeeld voor Android 4.3 was de releasedatum 9 juli 2012. Dit is al meer dan tien jaar geleden dus ook al is Bluetooth Low Energy een vrij recente technologie, is deze tegelijkertijd ook al zeer matuur.
+Zoals de tabel weergeeft wordt Bluetooth Low Energy reeds een lange tijd ondersteund. De laatste versie van iOS, Android, Windows Phone, Windows, macOS en Linux is op het moment van schrijven (december 2022) respectivelijk 16.1, 13, 8.1, 11, 13 en 6.1.1. Bijvoorbeeld voor Android 4.3 was de releasedatum 9 juli 2012. Dit is al meer dan tien jaar geleden dus ook al is Bluetooth Low Energy een vrij recente technologie, is deze tegelijkertijd ook al zeer matuur.\\
 
-%TODO:Op welke manier wordt locatie bepaald in libraries
-%Smartphones doen dit aan de hand van RSSI \autocite{Chen2017}.
+In dit gedeelte van de scriptie werden de meest frequent voorkomende technologieën beschreven. Hier werd hun rol in de wereld van asset tracking en specifiek in de bouwindustrie ook besproken. Door dit deel is er genoeg informatie vergaard geweest zodat er met genoeg achtergrondkennis naar het volgende deel kan gegaan worden, namelijk de methodologie.
